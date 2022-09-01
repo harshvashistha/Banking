@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
+
+
+<!--create database soprabanking;
+use soprabanking;
+create table account(
+accno varchar(20),
+cname varchar(20),
+gender varchar(20),
+dob varchar(20),
+address varchar(20),
+mob int,
+role varchar(20)
+);-->
+
+<!--insert into account values('A001','Admin','male','27-01-2019','Noida',9999,'ADMIN');-->
+
+<!--create table transactionbank(
+accountno varchar(20),
+ref varchar(20),
+dotrans varchar(20),
+transid varchar(20),
+depamount int,
+wdrwamount int,
+netbal int
+);-->
+
+create table account(
+accno varchar(20),
+cname varchar(20),
+gender varchar(20),
+dob varchar(20),
+address varchar(20),
+mob int,
+role varchar(20),
+password varchar(20),
+sques varchar(50),
+sans varchar(20)
+);
+
+
+
+insert into account values('A001','Admin','male','27-01-2019','Noida',9999,'ADMIN','123','what is pet name','raj');
+
+ALTER TABLE transactionbank ALTER COLUMN transid int;
+
+ALTER TABLE transactionbank MODIFY COLUMN transid int;
